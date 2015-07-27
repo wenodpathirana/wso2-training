@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api xmlns="http://ws.apache.org/ns/synapse" name="TwitterAPI_NEW" context="/twitter">
+    <resource methods="GET">
+        <inSequence>
+            <twitter.init>
+                <consumerKey>cjzeq4cU9W34dZ4T1F4LOPpWj</consumerKey>
+                <consumerSecret>sS2Ny0fE2hQka4mVVl8Hp8T6lxAkYIDe2IO5vbPkkxg5A3qMWh</consumerSecret>
+                <accessToken>101146383-qRTZGIivZG5myQnZrhf4mFztSvZ52d0LCz8pR8gN</accessToken>
+                <accessTokenSecret>H3gZm7jZjs9YPw0VMjLSrAsW1irXwlUzPfni1hYTn74hE</accessTokenSecret>
+            </twitter.init>
+            <twitter.getFriends>
+                <screenName>wenodpathirana</screenName>
+            </twitter.getFriends>
+            <property name="messageType" value="text/xml" scope="axis2" type="STRING"/>
+            <property name="extractedPayload" expression="//friends/friend" scope="default" type="STRING"/>
+            <iterate continueParent="true" expression="//friends/friend">
+                <target>
+                    <sequence>
+                        <log level="full">
+                            <property name="sample" value="#########################################"/>
+                        </log>
+                    </sequence>
+                </target>
+            </iterate>
+            <log level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

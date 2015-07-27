@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api xmlns="http://ws.apache.org/ns/synapse" name="GreetAPI" context="/GreetAPI">
+    <resource methods="GET" uri-template="/greet/{msg}">
+        <inSequence>
+            <payloadFactory media-type="xml">
+                <format>
+                    <typ:greet xmlns:typ="http://www.wso2.org/types">
+                        <name xmlns="">$1</name>
+                    </typ:greet>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('uri.var.msg')"/>
+                </args>
+            </payloadFactory>
+            <header name="Action" scope="default" value="urn:greet"/>
+            <call>
+                <endpoint>
+                    <address uri="http://localhost:9764/services/HelloService/" format="soap11"/>
+                </endpoint>
+            </call>
+            <log level="full"/>
+            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+            <send/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

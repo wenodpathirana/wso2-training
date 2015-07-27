@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="LogServiceProxy" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log level="full"/>
+            <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2" type="STRING"/>
+            <property name="OUT_ONLY" value="true" scope="axis2" type="STRING"/>
+            <store messageStore="JMSMS"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_cF2zgCuCEeWZP57RQhTTLQ" type="Esb" name="endpoint_HelloWorldEp.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_cJQFwCuCEeWZP57RQhTTLQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cJQs0CuCEeWZP57RQhTTLQ" type="7001"/>
+    <children xmi:type="notation:Shape" xmi:id="_cR984CuCEeWZP57RQhTTLQ" type="3642" fontName="Ubuntu">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_cR984iuCEeWZP57RQhTTLQ" type="7041">
+        <children xmi:type="notation:Node" xmi:id="_cSHt4CuCEeWZP57RQhTTLQ" type="3646">
+          <children xmi:type="notation:DecorationNode" xmi:id="_cSHt5SuCEeWZP57RQhTTLQ" type="5161"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_cSHt4SuCEeWZP57RQhTTLQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cSHt4iuCEeWZP57RQhTTLQ" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_cSHt4yuCEeWZP57RQhTTLQ"/>
+          <element xmi:type="esb:AddressEndPoint" href="endpoint_HelloWorldEp.esb#//@server/@children.0/@child"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cSHt5CuCEeWZP57RQhTTLQ" width="75" height="75"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_cR984yuCEeWZP57RQhTTLQ" showTitle="true"/>
+      </children>
+      <element xmi:type="esb:EndpointDiagram" href="endpoint_HelloWorldEp.esb#//@server/@children.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cR984SuCEeWZP57RQhTTLQ" width="110" height="100"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_cJQFwSuCEeWZP57RQhTTLQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cJQFwiuCEeWZP57RQhTTLQ" fontName="Ubuntu"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_cJQFwyuCEeWZP57RQhTTLQ"/>
+    <element xmi:type="esb:EsbServer" href="endpoint_HelloWorldEp.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cJQFxCuCEeWZP57RQhTTLQ"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_cF2zgSuCEeWZP57RQhTTLQ"/>
+  <element xmi:type="esb:EsbDiagram" href="endpoint_HelloWorldEp.esb#/"/>
+</notation:Diagram>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api xmlns="http://ws.apache.org/ns/synapse" name="twitterAPI" context="/twitter">
+    <resource methods="GET">
+        <inSequence>
+            <twitter.init>
+                <consumerKey>nHm3LLLp8MNNpmfqdGKGUFLRQ</consumerKey>
+                <consumerSecret>GyYTS3DiaHPh4HsCT9YhvChFfiLJaSg6xHVtMM8nl1M2ccQDuE</consumerSecret>
+                <accessToken>101146383-qRTZGIivZG5myQnZrhf4mFztSvZ52d0LCz8pR8gN</accessToken>
+                <accessTokenSecret>H3gZm7jZjs9YPw0VMjLSrAsW1irXwlUzPfni1hYTn74hE</accessTokenSecret>
+            </twitter.init>
+            <twitter.getDirectMessages/>
+            <log level="full"/>
+            <drop/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

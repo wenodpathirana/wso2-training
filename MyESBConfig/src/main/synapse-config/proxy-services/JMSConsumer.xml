@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="JMSConsumer" transports="jms" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log level="full">
+                <property name="jms_consumer" value="###############_JMS_CONSUMER_###############"/>
+            </log>
+            <property name="messageType" value="application/soap+xml" scope="axis2" type="STRING"/>
+            <header name="Action" scope="default" value="urn:greet"/>
+            <header name="To" scope="default" value="http://localhost:9764/services/HelloService"/>
+            <send/>
+        </inSequence>
+        <outSequence>
+            <log level="full"/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+    <parameter name="transport.jms.ContentType">
+        <rules>
+            <jmsProperty>contentType</jmsProperty>
+            <default>application/xml</default>
+        </rules>
+    </parameter>
+    <parameter name="transport.jms.Destination">JMSConsumer</parameter>
+</proxy>
