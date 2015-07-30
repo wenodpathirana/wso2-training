@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_IFagUDaAEeWykbK0sM2SKA" type="Esb" name="endpoint_BalancingProxyEp.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_IK1L0DaAEeWykbK0sM2SKA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IK1y4jaAEeWykbK0sM2SKA" type="7001"/>
+    <children xmi:type="notation:Shape" xmi:id="_IOWZ4DaAEeWykbK0sM2SKA" type="3642" fontName="Ubuntu">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_IOXA8DaAEeWykbK0sM2SKA" type="7041">
+        <children xmi:type="notation:Node" xmi:id="_IOiAEDaAEeWykbK0sM2SKA" type="3646">
+          <children xmi:type="notation:DecorationNode" xmi:id="_IOiAFTaAEeWykbK0sM2SKA" type="5161"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_IOiAETaAEeWykbK0sM2SKA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_IOiAEjaAEeWykbK0sM2SKA" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_IOiAEzaAEeWykbK0sM2SKA"/>
+          <element xmi:type="esb:AddressEndPoint" href="endpoint_BalancingProxyEp.esb#//@server/@children.0/@child"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOiAFDaAEeWykbK0sM2SKA" width="75" height="75"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_IOXA8TaAEeWykbK0sM2SKA" showTitle="true"/>
+      </children>
+      <element xmi:type="esb:EndpointDiagram" href="endpoint_BalancingProxyEp.esb#//@server/@children.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOWZ4TaAEeWykbK0sM2SKA" width="110" height="100"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_IK1L0TaAEeWykbK0sM2SKA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IK1L0jaAEeWykbK0sM2SKA" fontName="Ubuntu"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_IK1y4DaAEeWykbK0sM2SKA"/>
+    <element xmi:type="esb:EsbServer" href="endpoint_BalancingProxyEp.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IK1y4TaAEeWykbK0sM2SKA"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_IFagUTaAEeWykbK0sM2SKA"/>
+  <element xmi:type="esb:EsbDiagram" href="endpoint_BalancingProxyEp.esb#/"/>
+</notation:Diagram>

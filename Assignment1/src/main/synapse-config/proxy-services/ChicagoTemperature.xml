@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="ChicagoTemperature" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <call>
+                <endpoint>
+                    <http method="get" uri-template="http://api.openweathermap.org/data/2.5/weather?q=Chicago"/>
+                </endpoint>
+            </call>
+            <log level="full"/>
+            <dbreport>
+                <connection>
+                    <pool>
+                        <password>root</password>
+                        <user>root</user>
+                        <url>jdbc:mysql://localhost:3306/transactions</url>
+                        <driver>com.mysql.jdbc.Driver</driver>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql>insert into weather (city, temperature, storetime) values (?, ?, FROM_UNIXTIME(?))</sql>
+                    <parameter expression="//name" type="CHAR"/>
+                    <parameter expression="//main/temp" type="CHAR"/>
+                    <parameter expression="//dt" type="DOUBLE"/>
+                </statement>
+            </dbreport>
+            <drop/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

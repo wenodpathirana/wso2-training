@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_1at_EDT7EeWNhLVO1aXGng" type="Esb" name="task_TemperatureTask.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_1c6XcDT7EeWNhLVO1aXGng" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_1c6-gDT7EeWNhLVO1aXGng" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_G6NfUDT9EeWNhLVO1aXGng" type="3667">
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_G6NfUTT9EeWNhLVO1aXGng"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_G6NfUjT9EeWNhLVO1aXGng" fontName="Ubuntu"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_G6NfUzT9EeWNhLVO1aXGng"/>
+        <element xmi:type="esb:Task" href="task_TemperatureTask.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G6NfVDT9EeWNhLVO1aXGng" width="75" height="75"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_1c6XcTT7EeWNhLVO1aXGng"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1c6XcjT7EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_1c6XczT7EeWNhLVO1aXGng"/>
+    <element xmi:type="esb:EsbServer" href="task_TemperatureTask.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1c6XdDT7EeWNhLVO1aXGng"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_1at_ETT7EeWNhLVO1aXGng"/>
+  <element xmi:type="esb:EsbDiagram" href="task_TemperatureTask.esb#/"/>
+</notation:Diagram>

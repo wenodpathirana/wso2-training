@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="StockQuoteAPIFaultSq" groupId="com.virtusa.AssignmentRegistry.resource" version="1.0.0" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>DEV/StockQuoteAPIFaultSq.xml</file>
+            <path>/_system/governance/assignment1/sequences</path>
+            <mediaType>application/vnd.wso2.sequence</mediaType>
+        </item>
+    </artifact>
+    <artifact name="smooks-csv" groupId="com.virtusa.AssignmentRegistry.resource" version="1.0.0" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>DEV/smooks-csv.xml</file>
+            <path>/_system/governance/smooks</path>
+            <mediaType>application/vnd+wso2.smooks</mediaType>
+        </item>
+    </artifact>
+    </artifacts>

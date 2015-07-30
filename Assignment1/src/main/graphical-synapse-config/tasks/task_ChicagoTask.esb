@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esb:EsbDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb">
+  <server type="TASK">
+    <children xsi:type="esb:Task" taskName="ChicagoTask" triggerType="Cron" cron="0 0/15 * * * ?">
+      <taskProperties propertyName="proxyName" propertyValue="ChicagoTemperature"/>
+      <taskProperties propertyName="format" propertyValue="soap11"/>
+      <taskProperties propertyName="soapAction" propertyValue="urn:mediate"/>
+      <taskProperties propertyName="message" propertyValue="&lt;task:city xmlns:task=&quot;http://www.wso2.org/task&quot;>&#xA;&#x9;&#x9;&#x9;&lt;name>Chicago&lt;/name>&#xA;&#x9;&#x9;&lt;/task:city>" propertyType="XML"/>
+      <taskProperties propertyName="injectTo" propertyValue="proxy"/>
+    </children>
+  </server>
+</esb:EsbDiagram>

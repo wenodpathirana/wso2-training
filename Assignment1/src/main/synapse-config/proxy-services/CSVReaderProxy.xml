@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="CSVReaderProxy" transports="http https vfs" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <smooks config-key="gov:smooks/smooks-csv.xml">
+                <input type="text"/>
+                <output type="xml"/>
+            </smooks>
+            <log level="full"/>
+            <iterate expression="//orders/order">
+                <target>
+                    <sequence>
+                        <log level="full"/>
+                        <property name="price" expression="//price" scope="default" type="STRING" description=""/>
+                        <payloadFactory media-type="xml">
+                            <format>
+                                <ser:placeOrder xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
+                                    <ser:order>
+                                        <xsd:symbol>$1</xsd:symbol>
+                                        <xsd:price>$2</xsd:price>
+                                        <xsd:quantity>$3</xsd:quantity>
+                                    </ser:order>
+                                </ser:placeOrder>
+                            </format>
+                            <args>
+                                <arg evaluator="xml" expression="//symbol"/>
+                                <arg evaluator="xml" expression="//price"/>
+                                <arg evaluator="xml" expression="//quantity"/>
+                            </args>
+                        </payloadFactory>
+                        <header name="Action" scope="default" value="urn:placeOrder"/>
+                        <property name="OUT_ONLY" value="true" scope="default" type="STRING"/>
+                        <property name="target.endpoint" value="StockQuoteEp" scope="default" type="STRING"/>
+                        <log level="full"/>
+                        <filter xpath="get-property('price') &gt; 1000">
+                            <then>
+                                <log level="full">
+                                    <property name="PRICE" value="######################################################################"/>
+                                </log>
+                            </then>
+                            <else/>
+                        </filter>
+                        <store messageStore="CSVStore" description=""/>
+                    </sequence>
+                </target>
+            </iterate>
+            <drop/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+    <parameter name="transport.PollInterval">15</parameter>
+    <parameter name="transport.vfs.ActionAfterProcess">MOVE</parameter>
+    <parameter name="transport.vfs.FileURI">file:///home/wenod/wso2/ESB481/in</parameter>
+    <parameter name="transport.vfs.MoveAfterProcess">file:///home/wenod/wso2/ESB481/done</parameter>
+    <parameter name="transport.vfs.MoveAfterFailure">file:///home/wenod/wso2/ESB481/fail</parameter>
+    <parameter name="transport.vfs.FileNamePattern">.*\.csv</parameter>
+    <parameter name="transport.vfs.ContentType">text/plain</parameter>
+    <parameter name="transport.vfs.ActionAfterFailure">MOVE</parameter>
+</proxy>

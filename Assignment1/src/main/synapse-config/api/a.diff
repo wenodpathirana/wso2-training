@@ -1,0 +1,172 @@
+diff --git a/Assignment1/src/main/synapse-config/api/SimpleStockQuote.xml b/Assignment1/src/main/synapse-config/api/SimpleStockQuote.xml
+index 8f5560a..75a3e73 100644
+--- a/Assignment1/src/main/synapse-config/api/SimpleStockQuote.xml
++++ b/Assignment1/src/main/synapse-config/api/SimpleStockQuote.xml
+@@ -1,165 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <api xmlns="http://ws.apache.org/ns/synapse" name="SimpleStockQuote" context="/stock">
+-    <resource methods="GET" uri-template="/simplequote/{org}">
+-        <inSequence>
+-            <log/>
+-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
+-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
+-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+-            <payloadFactory media-type="xml">
+-                <format>
+-                    <ser:getSimpleQuote xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
+-                        <xsd:symbol>$1</xsd:symbol>
+-                    </ser:getSimpleQuote>
+-                </format>
+-                <args>
+-                    <arg evaluator="xml" expression="get-property('uri.var.org')"/>
+-                </args>
+-            </payloadFactory>
+-            <header name="Action" scope="default" value="urn:getSimpleQuote"/>
+-            <log level="full"/>
+-            <send>
+-                <endpoint>
+-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
+-                </endpoint>
+-            </send>
+-        </inSequence>
+-        <outSequence>
+-            <log level="full"/>
+-            <send/>
+-        </outSequence>
+-        <faultSequence/>
+-    </resource>
+-    <resource methods="GET" uri-template="/fullquote/{org}">
+-        <inSequence>
+-            <log/>
+-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
+-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
+-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+-            <payloadFactory media-type="xml">
+-                <format>
+-                    <ser:getFullQuote xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
+-                        <ser:request>
+-                            <xsd:symbol>$1</xsd:symbol>
+-                        </ser:request>
+-                    </ser:getFullQuote>
+-                </format>
+-                <args>
+-                    <arg evaluator="xml" expression="get-property('uri.var.org')"/>
+-                </args>
+-            </payloadFactory>
+-            <header name="Action" scope="default" value="urn:getFullQuote"/>
+-            <log level="full"/>
+-            <send>
+-                <endpoint>
+-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
+-                </endpoint>
+-            </send>
+-        </inSequence>
+-        <outSequence>
+-            <log level="full"/>
+-            <send/>
+-        </outSequence>
+-        <faultSequence/>
+-    </resource>
+-    <resource methods="GET" uri-template="/quote/{org}">
+-        <inSequence>
+-            <log/>
+-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
+-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
+-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+-            <payloadFactory media-type="xml">
+-                <format>
+-                    <ser:getQuote xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
+-                        <ser:request>
+-                            <xsd:symbol>$1</xsd:symbol>
+-                        </ser:request>
+-                    </ser:getQuote>
+-                </format>
+-                <args>
+-                    <arg evaluator="xml" expression="get-property('uri.var.org')"/>
+-                </args>
+-            </payloadFactory>
+-            <header name="Action" scope="default" value="urn:getQuote"/>
+-            <log level="full"/>
+-            <send>
+-                <endpoint>
+-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
+-                </endpoint>
+-            </send>
+-        </inSequence>
+-        <outSequence>
+-            <log level="full"/>
+-            <send/>
+-        </outSequence>
+-        <faultSequence/>
+-    </resource>
+-    <resource methods="GET" uri-template="/marketactivity/{org}">
+-        <inSequence>
+-            <log/>
+-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
+-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
+-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+-            <payloadFactory media-type="xml">
+-                <format>
+-                    <ser:getMarketActivity xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
+-                        <ser:request>
+-                            <xsd:symbols>$1</xsd:symbols>
+-                        </ser:request>
+-                    </ser:getMarketActivity>
+-                </format>
+-                <args>
+-                    <arg evaluator="xml" expression="get-property('uri.var.org')"/>
+-                </args>
+-            </payloadFactory>
+-            <header name="Action" scope="default" value="urn:getMarketActivity"/>
+-            <log level="full"/>
+-            <send>
+-                <endpoint>
+-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
+-                </endpoint>
+-            </send>
+-        </inSequence>
+-        <outSequence>
+-            <log level="full"/>
+-            <send/>
+-        </outSequence>
+-        <faultSequence/>
+-    </resource>
+-    <resource methods="POST" uri-template="/order">
+-        <inSequence>
+-            <log/>
+-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
+-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
+-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+-            <payloadFactory media-type="xml">
+-                <format>
+-                    <ser:placeOrder xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
+-                        <ser:order>
+-                            <xsd:symbol>$1</xsd:symbol>
+-                            <xsd:price>$2</xsd:price>
+-                            <xsd:quantity>$3</xsd:quantity>
+-                        </ser:order>
+-                    </ser:placeOrder>
+-                </format>
+-                <args>
+-                    <arg evaluator="xml" expression="//symbol"/>
+-                    <arg evaluator="xml" expression="//price"/>
+-                    <arg evaluator="xml" expression="//quantity"/>
+-                </args>
+-            </payloadFactory>
+-            <header name="Action" scope="default" value="urn:placeOrder"/>
+-            <log level="full"/>
+-            <send>
+-                <endpoint>
+-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
+-                </endpoint>
+-            </send>
+-        </inSequence>
+-        <outSequence>
+-            <log level="full"/>
+-            <send/>
+-        </outSequence>
+-        <faultSequence/>
++    <resource methods="GET" uri-template="/simplequote/{org}" outSequence="StockQuoteAPIOutSq" faultSequence="/default/key">
++        <inSequence/>
+     </resource>
+ </api>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_e2vVcDTzEeWNhLVO1aXGng" type="Esb" name="proxy_ChicagoTemperature.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_e6cJsDTzEeWNhLVO1aXGng" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_e6cJtTTzEeWNhLVO1aXGng" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_6bxTkDT6EeWNhLVO1aXGng" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_6bxTlTT6EeWNhLVO1aXGng" type="5003"/>
+        <children xmi:type="notation:Node" xmi:id="_6bzIwDT6EeWNhLVO1aXGng" type="3002">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_6bzIwTT6EeWNhLVO1aXGng"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6bzIwjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_6bzIwzT6EeWNhLVO1aXGng"/>
+          <element xmi:type="esb:ProxyOutputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@outputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bzIxDT6EeWNhLVO1aXGng" x="81" y="-27"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6bzIxTT6EeWNhLVO1aXGng" type="3003">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_6bzIxjT6EeWNhLVO1aXGng"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6bzIxzT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_6bzIyDT6EeWNhLVO1aXGng"/>
+          <element xmi:type="esb:ProxyInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@inputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bzIyTT6EeWNhLVO1aXGng" x="81" y="-15"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6bzIyjT6EeWNhLVO1aXGng" type="3729">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_6bzIyzT6EeWNhLVO1aXGng"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6bzIzDT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_6bzIzTT6EeWNhLVO1aXGng"/>
+          <element xmi:type="esb:ProxyOutSequenceOutputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@outSequenceOutputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bzIzjT6EeWNhLVO1aXGng" x="105" y="-15"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6bzIzzT6EeWNhLVO1aXGng" type="3489">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_6bzI0DT6EeWNhLVO1aXGng"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6bzI0TT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_6bzI0jT6EeWNhLVO1aXGng"/>
+          <element xmi:type="esb:ProxyFaultInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@faultInputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bzI0zT6EeWNhLVO1aXGng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6bzv0DT6EeWNhLVO1aXGng" type="3486">
+          <children xmi:type="notation:Node" xmi:id="_6b1lADT6EeWNhLVO1aXGng" type="3487">
+            <children xmi:type="notation:Node" xmi:id="_6b2MEDT6EeWNhLVO1aXGng" type="3608">
+              <children xmi:type="notation:DecorationNode" xmi:id="_6b2MFTT6EeWNhLVO1aXGng" type="7034">
+                <children xmi:type="notation:Node" xmi:id="_6b8SsDT6EeWNhLVO1aXGng" type="3742">
+                  <children xmi:type="notation:Node" xmi:id="_6b9g0DT6EeWNhLVO1aXGng" type="3743">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b9g0TT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6b9g0jT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6b9g0zT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:CallMediatorInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b9g1DT6EeWNhLVO1aXGng" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_6b9g1TT6EeWNhLVO1aXGng" type="3744">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b9g1jT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6b9g1zT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6b9g2DT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:CallMediatorOutputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b9g2TT6EeWNhLVO1aXGng" x="-11" y="-9"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_6b-H4DT6EeWNhLVO1aXGng" type="3745">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b-H4TT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6b-H4jT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6b-H4zT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:CallMediatorEndpointOutputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@endpointOutputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b-H5DT6EeWNhLVO1aXGng"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_6b-H5TT6EeWNhLVO1aXGng" type="3746">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_6b-H6jT6EeWNhLVO1aXGng" type="7047">
+                      <children xmi:type="notation:Node" xmi:id="_6cCZUDT6EeWNhLVO1aXGng" type="3709">
+                        <children xmi:type="notation:DecorationNode" xmi:id="_6cCZVTT6EeWNhLVO1aXGng" type="5206"/>
+                        <children xmi:type="notation:Node" xmi:id="_6cDncDT6EeWNhLVO1aXGng" type="3710">
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cDncTT6EeWNhLVO1aXGng"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_6cDncjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_6cDnczT6EeWNhLVO1aXGng"/>
+                          <element xmi:type="esb:HTTPEndPointInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.0/@inputConnector"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cDndDT6EeWNhLVO1aXGng"/>
+                        </children>
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cCZUTT6EeWNhLVO1aXGng"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_6cCZUjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_6cCZUzT6EeWNhLVO1aXGng"/>
+                        <element xmi:type="esb:HTTPEndpoint" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow/@children.0"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cCZVDT6EeWNhLVO1aXGng" x="5" y="202"/>
+                      </children>
+                      <styles xmi:type="notation:TitleStyle" xmi:id="_6b-H6zT6EeWNhLVO1aXGng" showTitle="true"/>
+                    </children>
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b-H5jT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6b-H5zT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6b-H6DT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:MediatorFlow" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@mediatorFlow"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b-H6TT6EeWNhLVO1aXGng"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b8SsTT6EeWNhLVO1aXGng"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_6b8SsjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_6b8SszT6EeWNhLVO1aXGng"/>
+                  <element xmi:type="esb:CallMediator" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b8StDT6EeWNhLVO1aXGng" x="25" y="95" width="170" height="100"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_6cHR0DT6EeWNhLVO1aXGng" type="3495">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_6cHR1TT6EeWNhLVO1aXGng" type="5168"/>
+                  <children xmi:type="notation:Node" xmi:id="_6cH44DT6EeWNhLVO1aXGng" type="3018">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cH44TT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6cH44jT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6cH44zT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:LogMediatorInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cH45DT6EeWNhLVO1aXGng" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_6cIf8DT6EeWNhLVO1aXGng" type="3019">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cIf8TT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6cIf8jT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6cIf8zT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:LogMediatorOutputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cIf9DT6EeWNhLVO1aXGng" x="-11" y="-9"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cHR0TT6EeWNhLVO1aXGng"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_6cHR0jT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_6cHR0zT6EeWNhLVO1aXGng"/>
+                  <element xmi:type="esb:LogMediator" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cHR1DT6EeWNhLVO1aXGng" x="235" y="95" width="77" height="75"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_6cMKUDT6EeWNhLVO1aXGng" type="3513">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_6cMxZDT6EeWNhLVO1aXGng" type="5180"/>
+                  <children xmi:type="notation:Node" xmi:id="_6cNYcDT6EeWNhLVO1aXGng" type="3079">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cNYcTT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6cNYcjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6cNYczT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:DBReportMediatorInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cNYdDT6EeWNhLVO1aXGng" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_6cN_gDT6EeWNhLVO1aXGng" type="3080">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cN_gTT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6cN_gjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6cN_gzT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:DBReportMediatorOutputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cN_hDT6EeWNhLVO1aXGng" x="-11" y="-9"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cMxYDT6EeWNhLVO1aXGng"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_6cMxYTT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_6cMxYjT6EeWNhLVO1aXGng"/>
+                  <element xmi:type="esb:DBReportMediator" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cMxYzT6EeWNhLVO1aXGng" x="352" y="95" width="77" height="75"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_6cUGIDT6EeWNhLVO1aXGng" type="3491">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_6cUGJTT6EeWNhLVO1aXGng" type="5166"/>
+                  <children xmi:type="notation:Node" xmi:id="_6cVUQDT6EeWNhLVO1aXGng" type="3008">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cVUQTT6EeWNhLVO1aXGng"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_6cVUQjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_6cVUQzT6EeWNhLVO1aXGng"/>
+                    <element xmi:type="esb:DropMediatorInputConnector" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cVURDT6EeWNhLVO1aXGng"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_6cUGITT6EeWNhLVO1aXGng"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_6cUGIjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_6cUGIzT6EeWNhLVO1aXGng"/>
+                  <element xmi:type="esb:DropMediator" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cUGJDT6EeWNhLVO1aXGng" x="469" y="95" width="77" height="75"/>
+                </children>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_6b2MFjT6EeWNhLVO1aXGng" showTitle="true"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b2METT6EeWNhLVO1aXGng"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_6b2MEjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_6b2MEzT6EeWNhLVO1aXGng"/>
+              <element xmi:type="esb:MediatorFlow" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b2MFDT6EeWNhLVO1aXGng"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b1lATT6EeWNhLVO1aXGng"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_6b1lAjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_6b1lAzT6EeWNhLVO1aXGng"/>
+            <element xmi:type="esb:ProxyServiceSequenceAndEndpointContainer" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b1lBDT6EeWNhLVO1aXGng"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6b1lBTT6EeWNhLVO1aXGng" type="3488">
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_6b1lBjT6EeWNhLVO1aXGng"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_6b1lBzT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_6b1lCDT6EeWNhLVO1aXGng"/>
+            <element xmi:type="esb:ProxyServiceFaultContainer" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@faultContainer"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6b1lCTT6EeWNhLVO1aXGng"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_6bzv0TT6EeWNhLVO1aXGng"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6bzv0jT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_6bzv0zT6EeWNhLVO1aXGng"/>
+          <element xmi:type="esb:ProxyServiceContainer" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bzv1DT6EeWNhLVO1aXGng"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_6bxTkTT6EeWNhLVO1aXGng"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_6bxTkjT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_6bxTkzT6EeWNhLVO1aXGng"/>
+        <element xmi:type="esb:ProxyService" href="proxy_ChicagoTemperature.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bxTlDT6EeWNhLVO1aXGng" width="300" height="400"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_e6cJsTTzEeWNhLVO1aXGng"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_e6cJsjTzEeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_e6cJszTzEeWNhLVO1aXGng"/>
+    <element xmi:type="esb:EsbServer" href="proxy_ChicagoTemperature.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6cJtDTzEeWNhLVO1aXGng"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_e2vVcTTzEeWNhLVO1aXGng"/>
+  <element xmi:type="esb:EsbDiagram" href="proxy_ChicagoTemperature.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_6cZlsDT6EeWNhLVO1aXGng" type="4001" source="_6bzIwDT6EeWNhLVO1aXGng" target="_6b9g0DT6EeWNhLVO1aXGng" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6cZlsTT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6cZlsjT6EeWNhLVO1aXGng" points="[11, 5, -5, 0]$[10, 0, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6caz0DT6EeWNhLVO1aXGng" type="4001" source="_6b9g1TT6EeWNhLVO1aXGng" target="_6cH44DT6EeWNhLVO1aXGng" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6caz0TT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6caz0jT6EeWNhLVO1aXGng" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6ccpADT6EeWNhLVO1aXGng" type="4001" source="_6cIf8DT6EeWNhLVO1aXGng" target="_6cNYcDT6EeWNhLVO1aXGng" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6ccpATT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6ccpAjT6EeWNhLVO1aXGng" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6cd3IDT6EeWNhLVO1aXGng" type="4001" source="_6cN_gDT6EeWNhLVO1aXGng" target="_6cVUQDT6EeWNhLVO1aXGng" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6cd3ITT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6cd3IjT6EeWNhLVO1aXGng" points="[1, 9, 0, 4]$[0, 0, -1, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6dS9kDT6EeWNhLVO1aXGng" type="4001" source="_6b-H4DT6EeWNhLVO1aXGng" target="_6cDncDT6EeWNhLVO1aXGng" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6dS9kTT6EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_ChicagoTemperature.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@endpointOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6dS9kjT6EeWNhLVO1aXGng" points="[1, 9, -32, -209]$[32, 213, -1, -5]"/>
+  </edges>
+</notation:Diagram>

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api xmlns="http://ws.apache.org/ns/synapse" name="SimpleStockQuote" context="/stock">
-    <resource methods="GET" uri-template="/simplequote/{org}">
+    <resource methods="GET" uri-template="/simplequote/{org}" outSequence="StockQuoteAPIOutSq" faultSequence="StockQuoteAPIErrorSq">
         <inSequence>
-            <log/>
-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
             <payloadFactory media-type="xml">
                 <format>
                     <ser:getSimpleQuote xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
@@ -16,26 +12,13 @@
                     <arg evaluator="xml" expression="get-property('uri.var.org')"/>
                 </args>
             </payloadFactory>
-            <header name="Action" scope="default" value="urn:getSimpleQuote"/>
-            <log level="full"/>
-            <send>
-                <endpoint>
-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
-                </endpoint>
-            </send>
+            <call-template target="StockSqTemplate">
+                <with-param name="soapAction" value="getSimpleQuote"/>
+            </call-template>
         </inSequence>
-        <outSequence>
-            <log level="full"/>
-            <send/>
-        </outSequence>
-        <faultSequence/>
     </resource>
-    <resource methods="GET" uri-template="/fullquote/{org}">
+    <resource methods="GET" uri-template="/fullquote/{org}" outSequence="StockQuoteAPIOutSq" faultSequence="StockQuoteAPIErrorSq">
         <inSequence>
-            <log/>
-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
             <payloadFactory media-type="xml">
                 <format>
                     <ser:getFullQuote xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
@@ -48,26 +31,13 @@
                     <arg evaluator="xml" expression="get-property('uri.var.org')"/>
                 </args>
             </payloadFactory>
-            <header name="Action" scope="default" value="urn:getFullQuote"/>
-            <log level="full"/>
-            <send>
-                <endpoint>
-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
-                </endpoint>
-            </send>
+            <call-template target="StockSqTemplate">
+                <with-param name="soapAction" value="getFullQuote"/>
+            </call-template>
         </inSequence>
-        <outSequence>
-            <log level="full"/>
-            <send/>
-        </outSequence>
-        <faultSequence/>
     </resource>
-    <resource methods="GET" uri-template="/quote/{org}">
+    <resource methods="GET" uri-template="/quote/{org}" outSequence="StockQuoteAPIOutSq" faultSequence="StockQuoteAPIErrorSq">
         <inSequence>
-            <log/>
-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
             <payloadFactory media-type="xml">
                 <format>
                     <ser:getQuote xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
@@ -81,25 +51,13 @@
                 </args>
             </payloadFactory>
             <header name="Action" scope="default" value="urn:getQuote"/>
-            <log level="full"/>
-            <send>
-                <endpoint>
-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
-                </endpoint>
-            </send>
+            <call-template target="StockSqTemplate">
+                <with-param name="soapAction" value="getQuote"/>
+            </call-template>
         </inSequence>
-        <outSequence>
-            <log level="full"/>
-            <send/>
-        </outSequence>
-        <faultSequence/>
     </resource>
-    <resource methods="GET" uri-template="/marketactivity/{org}">
+    <resource methods="GET" uri-template="/marketactivity/{org}" outSequence="StockQuoteAPIOutSq" faultSequence="StockQuoteAPIErrorSq">
         <inSequence>
-            <log/>
-            <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
-            <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
-            <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
             <payloadFactory media-type="xml">
                 <format>
                     <ser:getMarketActivity xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">
@@ -112,19 +70,10 @@
                     <arg evaluator="xml" expression="get-property('uri.var.org')"/>
                 </args>
             </payloadFactory>
-            <header name="Action" scope="default" value="urn:getMarketActivity"/>
-            <log level="full"/>
-            <send>
-                <endpoint>
-                    <address uri="http://localhost:9000/services/SimpleStockQuoteService" format="soap11"/>
-                </endpoint>
-            </send>
+            <call-template target="StockSqTemplate">
+                <with-param name="soapAction" value="getMarketActivity"/>
+            </call-template>
         </inSequence>
-        <outSequence>
-            <log level="full"/>
-            <send/>
-        </outSequence>
-        <faultSequence/>
     </resource>
     <resource methods="POST" uri-template="/order">
         <inSequence>

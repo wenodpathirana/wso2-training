@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="StockQuoteAPIErrorSq">
+    <log level="full">
+        <property name="ERROR_MESSAGE" expression="get-property('ERROR_MESSAGE')"/>
+    </log>
+    <property name="NO_ENTITY_BODY" scope="axis2" action="remove"/>
+    <makefault version="pox" description="">
+        <reason expression="get-property('ERROR_MESSAGE')"/>
+        <detail expression="get-property('ERROR_DETAIL')"/>
+    </makefault>
+    <log level="full"/>
+    <property name="messageType" value="application/json" scope="axis2" type="STRING"/>
+    <respond/>
+</sequence>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><resource name="StockQuoteAPIFaultSq.xml" isCollection="false" path="/_system/governance/assignment1/sequences/DEV/StockQuoteAPIFaultSq.xml" registryUrl="https://localhost:9443/registry" status="added">
+    <mediaType>application/vnd.wso2.sequence</mediaType>
+</resource>

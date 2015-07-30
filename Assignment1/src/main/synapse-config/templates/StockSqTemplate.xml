@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template xmlns="http://ws.apache.org/ns/synapse" name="StockSqTemplate">
+    <parameter name="soapAction"/>
     <sequence>
         <log/>
+        <property name="FORCE_ERROR_ON_SOAP_FAULT" value="true" scope="default" type="STRING"/>
         <property name="REST_URL_POSTFIX" scope="axis2" action="remove"/>
-        <header name="To" scope="default" value="http://localhost:9000/services/SimpleStockQuoteService"/>
         <property name="messageType" value="application/xml" scope="axis2" type="STRING"/>
+        <property name="soapAction" expression="$func:soapAction" scope="default" type="STRING"/>
+        <header name="Action" scope="default" expression="fn:concat('urn:', get-property('soapAction'))"/>
+        <log/>
+        <send>
+            <endpoint key="StockQuoteEp"/>
+        </send>
     </sequence>
 </template>

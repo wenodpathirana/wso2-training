@@ -9,17 +9,82 @@
   <name>AssignmentDeploy</name>
   <description>AssignmentDeploy</description>
   <properties>
-    <com.virtusa.Assignment1.api_._SimpleStockQuote>capp/EnterpriseServiceBus</com.virtusa.Assignment1.api_._SimpleStockQuote>
+    <com.virtusa.AssignmentRegistry.resource_._StockQuoteAPIFaultSq>capp/EnterpriseServiceBus</com.virtusa.AssignmentRegistry.resource_._StockQuoteAPIFaultSq>
+    <com.virtusa.Assignment1.message-store_._CSVStore>capp/EnterpriseServiceBus</com.virtusa.Assignment1.message-store_._CSVStore>
+    <com.virtusa.AssignmentRegistry.resource_._smooks-csv-xml>capp/EnterpriseServiceBus</com.virtusa.AssignmentRegistry.resource_._smooks-csv-xml>
     <artifact.types>jaggery/app=zip,service/rule=aar,lib/library/bundle=jar,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/proxy-service=xml,synapse/message-store=xml,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/sequence=xml,synapse/configuration=xml,lib/registry/handlers=jar,synapse/task=xml,service/meta=xml,webapp/jaxws=war,synapse/api=xml,cep/bucket=xml,bpel/workflow=zip,lib/registry/filter=jar,service/dataservice=dbs,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/event-source=xml,synapse/template=xml,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <com.virtusa.Assignment1.sequence_._StockQuoteAPIOutSq>capp/EnterpriseServiceBus</com.virtusa.Assignment1.sequence_._StockQuoteAPIOutSq>
+    <com.virtusa.Assignment1.sequence_._StockQuoteAPIErrorSq>capp/EnterpriseServiceBus</com.virtusa.Assignment1.sequence_._StockQuoteAPIErrorSq>
+    <com.virtusa.Assignment1.task_._TempTask>capp/EnterpriseServiceBus</com.virtusa.Assignment1.task_._TempTask>
+    <com.virtusa.Assignment1.endpoint_._StockQuoteEp>capp/EnterpriseServiceBus</com.virtusa.Assignment1.endpoint_._StockQuoteEp>
+    <com.virtusa.AssignmentRegistry.resource_._smooks-csv>capp/EnterpriseServiceBus</com.virtusa.AssignmentRegistry.resource_._smooks-csv>
+    <com.virtusa.Assignment1.proxy-service_._CSVReaderProxy>capp/EnterpriseServiceBus</com.virtusa.Assignment1.proxy-service_._CSVReaderProxy>
+    <com.virtusa.Assignment1.message-processors_._CVSMessageProcessor>capp/EnterpriseServiceBus</com.virtusa.Assignment1.message-processors_._CVSMessageProcessor>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.virtusa.Assignment1.api</groupId>
-      <artifactId>SimpleStockQuote</artifactId>
+      <groupId>com.virtusa.Assignment1.message-processors</groupId>
+      <artifactId>CVSMessageProcessor</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
       <scope>system</scope>
-      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/api/SimpleStockQuote/pom.xml</systemPath>
+      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/message-processors/CVSMessageProcessor/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.Assignment1.sequence</groupId>
+      <artifactId>StockQuoteAPIErrorSq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/sequence/StockQuoteAPIErrorSq/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.Assignment1.message-store</groupId>
+      <artifactId>CSVStore</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/message-store/CSVStore/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.AssignmentRegistry.resource</groupId>
+      <artifactId>StockQuoteAPIFaultSq</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../AssignmentRegistry/target/capp/artifacts/resource/StockQuoteAPIFaultSq/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.Assignment1.proxy-service</groupId>
+      <artifactId>CSVReaderProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/proxy-service/CSVReaderProxy/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.AssignmentRegistry.resource</groupId>
+      <artifactId>smooks-csv</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../AssignmentRegistry/target/capp/artifacts/resource/smooks-csv/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.Assignment1.endpoint</groupId>
+      <artifactId>StockQuoteEp</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/endpoint/StockQuoteEp/pom.xml</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.virtusa.Assignment1.sequence</groupId>
+      <artifactId>StockQuoteAPIOutSq</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+      <scope>system</scope>
+      <systemPath>${basedir}/../Assignment1/target/capp/artifacts/sequence/StockQuoteAPIOutSq/pom.xml</systemPath>
     </dependency>
   </dependencies>
   <repositories>

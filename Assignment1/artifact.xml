@@ -5,4 +5,37 @@
     <artifact name="StockSqTemplate" groupId="com.virtusa.Assignment1.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/templates/StockSqTemplate.xml</file>
     </artifact>
+    <artifact name="StockQuoteEp" groupId="com.virtusa.Assignment1.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/StockQuoteEp.xml</file>
+    </artifact>
+    <artifact name="StockQuoteAPIOutSq" groupId="com.virtusa.Assignment1.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/StockQuoteAPIOutSq.xml</file>
+    </artifact>
+    <artifact name="StockQuoteAPIErrorSq" groupId="com.virtusa.Assignment1.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/StockQuoteAPIErrorSq.xml</file>
+    </artifact>
+    <artifact name="ChicagoTemperature" groupId="com.virtusa.Assignment1.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/ChicagoTemperature.xml</file>
+    </artifact>
+    <artifact name="TemperatureTask" groupId="com.virtusa.Assignment1.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/tasks/TemperatureTask.xml</file>
+    </artifact>
+    <artifact name="ChicagoTask" groupId="com.virtusa.Assignment1.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/tasks/ChicagoTask.xml</file>
+    </artifact>
+    <artifact name="CSVReaderProxy" groupId="com.virtusa.Assignment1.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/CSVReaderProxy.xml</file>
+    </artifact>
+    <artifact name="CSVStore" groupId="com.virtusa.Assignment1.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/CSVStore.xml</file>
+    </artifact>
+    <artifact name="CVSMessageProcessor" groupId="com.virtusa.Assignment1.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/CVSMessageProcessor.xml</file>
+    </artifact>
+    <artifact name="BalancingProxy" groupId="com.virtusa.Assignment1.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/BalancingProxy.xml</file>
+    </artifact>
+    <artifact name="BalancingProxyEp" groupId="com.virtusa.Assignment1.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/BalancingProxyEp.xml</file>
+    </artifact>
 </artifacts>

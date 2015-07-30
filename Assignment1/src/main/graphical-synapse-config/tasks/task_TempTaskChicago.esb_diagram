@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_vzyg4DT9EeWNhLVO1aXGng" type="Esb" name="task_TempTaskChicago.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_v1ei8DT9EeWNhLVO1aXGng" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_v1ei9TT9EeWNhLVO1aXGng" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_PVnv8DT-EeWNhLVO1aXGng" type="3667">
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_PVnv8TT-EeWNhLVO1aXGng"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_PVnv8jT-EeWNhLVO1aXGng" fontName="Ubuntu"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_PVnv8zT-EeWNhLVO1aXGng"/>
+        <element xmi:type="esb:Task" href="task_TempTaskChicago.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PVnv9DT-EeWNhLVO1aXGng" width="75" height="75"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_v1ei8TT9EeWNhLVO1aXGng"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_v1ei8jT9EeWNhLVO1aXGng" fontName="Ubuntu"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_v1ei8zT9EeWNhLVO1aXGng"/>
+    <element xmi:type="esb:EsbServer" href="task_TempTaskChicago.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v1ei9DT9EeWNhLVO1aXGng"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_vzyg4TT9EeWNhLVO1aXGng"/>
+  <element xmi:type="esb:EsbDiagram" href="task_TempTaskChicago.esb#/"/>
+</notation:Diagram>

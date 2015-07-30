@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smooks-resource-list xmlns="http://www.milyn.org/xsd/smooks-1.1.xsd"
+	xmlns:csv="http://www.milyn.org/xsd/smooks/csv-1.2.xsd">
+	<params>
+		<param name="inputType">input.csv</param>
+		<param name="stream.filter.type">SAX</param>
+	</params>
+	<csv:reader fields="symbol,price,quantity" indent="true"
+		recordElementName="order" rootElementName="orders" />
+	<!-- <resource-config selector="org.xml.sax.driver">
+		<resource>org.milyn.csv.CSVReader</resource>
+	</resource-config> -->
+</smooks-resource-list>

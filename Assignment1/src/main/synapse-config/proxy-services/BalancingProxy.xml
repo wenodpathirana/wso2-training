@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="BalancingProxy" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log level="full"/>
+            <property xmlns:xsd="http://services.samples/xsd" xmlns:ser="http://services.samples" name="price" expression="$body/ser:placeOrder/ser:order/xsd:price" scope="default" type="STRING" description=""/>
+            <log>
+                <property name="price" expression="get-property('price')"/>
+            </log>
+            <filter xpath="get-property('price') &gt; 1000">
+                <then>
+                    <log level="full">
+                        <property name="PRICE" value="######################################################################"/>
+                    </log>
+                </then>
+                <else/>
+            </filter>
+            <drop/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>
